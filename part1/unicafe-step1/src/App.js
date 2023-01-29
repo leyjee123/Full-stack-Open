@@ -2,6 +2,7 @@ import { useState } from "react";
 import BadButton from "./Buttons/BadButton";
 import GoodButton from "./Buttons/GoodButton";
 import NeutButton from "./Buttons/NeutButton";
+import Statistics from "./Buttons/Statistics";
 
 function App() {
   const [good, setGood] = useState(0);
@@ -28,10 +29,9 @@ function App() {
       <NeutButton n={handleNeut} />
       <BadButton b={handleBad} />
       <h1>Statistics</h1>
-      <p>Good: {good}</p>
-      <p>Neutral: {neutral}</p>
-      <p>Bad: {bad}</p>
-    </div>
+      <Statistics g={good} n={neutral} b={bad}/>
+      
+    </div> 
   );
 }
 
