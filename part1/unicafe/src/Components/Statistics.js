@@ -8,7 +8,7 @@ export default function Statistics({ g, n, b }) {
     Bad: b,
     Total: t,
     Average: (g - b) / t,
-    Positive: (100 * g) / t,
+    Positive: String((100 * g) / t  )+ "%",
   };
 
   const mapped = Object.entries(tbValues).map((n) => (

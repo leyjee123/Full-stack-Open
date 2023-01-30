@@ -1,6 +1,6 @@
 import { useState } from "react";
-import ButtonList from "./Buttons/ButtonList";
-import Statistics from "./Buttons/Statistics";
+import ButtonList from "./Components/ButtonList";
+import Statistics from "./Components/Statistics";
 
 function App() {
   const [good, setGood] = useState(0);
