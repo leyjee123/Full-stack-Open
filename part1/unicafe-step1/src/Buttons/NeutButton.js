@@ -1,3 +1,4 @@
-export default function NeutButton({ n }) {
-  return <button onClick={n}>Neutral</button>;
+export default function NeutButton({ nn }) {
+  //console.log("neutral press")
+  return <button onClick={nn}>Neutral</button>;
 }

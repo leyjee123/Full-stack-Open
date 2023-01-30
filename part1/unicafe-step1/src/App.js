@@ -1,7 +1,5 @@
 import { useState } from "react";
-import BadButton from "./Buttons/BadButton";
-import GoodButton from "./Buttons/GoodButton";
-import NeutButton from "./Buttons/NeutButton";
+import ButtonList from "./Buttons/ButtonList";
 import Statistics from "./Buttons/Statistics";
 
 function App() {
@@ -25,9 +23,7 @@ function App() {
   return (
     <div>
       <h1>Give FeedBack</h1>
-      <GoodButton g={handleGood} />
-      <NeutButton n={handleNeut} />
-      <BadButton b={handleBad} />
+      <ButtonList g={handleGood} n={handleNeut} b={handleBad} />
       <h1>Statistics</h1>
       <Statistics g={good} n={neutral} b={bad}/>
       

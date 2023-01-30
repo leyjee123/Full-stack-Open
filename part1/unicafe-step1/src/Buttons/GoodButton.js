@@ -1,3 +1,4 @@
-export default function GoodButton({ g }) {
-  return <button onClick={g}>Good</button>;
+export default function GoodButton({ gg }) {
+  //console.log("Good press")
+  return <button onClick={gg}>Good</button>;
 }
